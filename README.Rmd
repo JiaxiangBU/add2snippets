@@ -15,6 +15,7 @@ knitr::opts_chunk$set(
 # add2snippets
 
 <!-- badges: start -->
+[![DOI](https://zenodo.org/badge/199655626.svg)](https://zenodo.org/badge/latestdoi/199655626)
 <!-- badges: end -->
 
 The goal of add2snippets is to help add useful R snippets.
@@ -42,3 +43,6 @@ library(add2snippets)
 add_uml(open.r.snippets = FALSE)
 ```
 
+***
+
+`r add2pkg::add_disclaimer()`

@@ -5,6 +5,7 @@
 
 <!-- badges: start -->
 
+[![DOI](https://zenodo.org/badge/199655626.svg)](https://zenodo.org/badge/latestdoi/199655626)
 <!-- badges: end -->
 
 The goal of add2snippets is to help add useful R snippets.
@@ -62,3 +63,31 @@ add_uml(open.r.snippets = FALSE)
 #>     ")
 #> Paste the snippet in the document.We recommend you do it manually.
 ```
+
+-----
+
+<h4 align="center">
+
+**Code of Conduct**
+
+</h4>
+
+<h6 align="center">
+
+Please note that the `add2snippets` project is released with a
+[Contributor Code of Conduct](.github/CODE_OF_CONDUCT.md).<br>By
+contributing to this project, you agree to abide by its terms.
+
+</h6>
+
+<h4 align="center">
+
+**License**
+
+</h4>
+
+<h6 align="center">
+
+MIT © [Jiaxiang Li](LICENSE.md)
+
+</h6>
