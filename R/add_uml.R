@@ -3,7 +3,7 @@
 #' @importFrom glue glue
 #' @importFrom clipr write_clip
 #' @export
-add_uml <- function() {
+add_uml <- function(open.r.snippets = TRUE) {
   text <- glue::glue('
   snippet push
       nomnoml::nomnoml("
@@ -37,7 +37,11 @@ add_uml <- function() {
       ]
       ")')
   clipr::write_clip(text, allow_non_interactive = TRUE)
-  file.edit("~/.R/snippets/r.snippets")
+  if(open.r.snippets) {
+      file.edit("~/.R/snippets/r.snippets")
+  } else {
+      print(text)
+  }
   cat("Paste the snippet in the document.")
   cat("We recommend you do it manually.")
 }

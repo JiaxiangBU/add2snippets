@@ -7,15 +7,15 @@
 
 <!-- badges: end -->
 
-The goal of add2snippets is to …
+The goal of add2snippets is to help add useful R snippets.
 
 ## Installation
 
-You can install the released version of add2snippets from
-[CRAN](https://CRAN.R-project.org) with:
+The development version from [GitHub](https://github.com/) with:
 
 ``` r
-install.packages("add2snippets")
+# install.packages("devtools")
+devtools::install_github("JiaxiangBU/add2snippets")
 ```
 
 ## Example
@@ -27,26 +27,38 @@ library(add2snippets)
 ## basic example code
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
-
 ``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
+add_uml(open.r.snippets = FALSE)
+#> snippet push
+#>     nomnoml::nomnoml("
+#>     #stroke: #a86128
+#>     [<frame>目前点击相关的模型、规则安排|
+#>       [<abstract>模型v1.0||xxx]
+#>       [xxx的合作方名单] --> [模型v1.0]
+#> 
+#>       [<abstract>模型v2.0||xxx模型]
+#>       [xxx的合作方名单] --> [模型v2.0]
+#> 
+#>       [<abstract>模型v3.0||user-based xxx]
+#>       [xxx的合作方名单] --> [模型v3.0]
+#> 
+#>       [<abstract>模型v3.1||item-based xxx]
+#>       [xxx的合作方名单] --> [模型v3.1]
+#> 
+#>       [<abstract>模型v3.2||@xxx 排序]
+#>       [xxx的合作方名单] --> [模型v3.2]
+#> 
+#>       [<abstract>默认排序||@xxx]
+#>       [模型v1.0] --> [默认排序]
+#>       [模型v2.0] --> [默认排序]
+#>       [模型v3.0] --> [默认排序]
+#>       [模型v3.1] --> [默认排序]
+#>       [模型v3.2] --> [默认排序]
+#> 
+#> 
+#>       [<abstract>去重逻辑||@xxx]
+#>       [默认排序] --> [去重逻辑]
+#>     ]
+#>     ")
+#> Paste the snippet in the document.We recommend you do it manually.
 ```
-
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date.
-
-You can also embed plots, for example:
-
-<img src="man/figures/README-pressure-1.png" width="100%" />
-
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub\!

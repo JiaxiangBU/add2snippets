@@ -4,7 +4,7 @@
 \alias{add_uml}
 \title{Paste the workflow figure built with the Unified Modeling Language}
 \usage{
-add_uml()
+add_uml(open.r.snippets = TRUE)
 }
 \description{
 Paste the workflow figure built with the Unified Modeling Language
