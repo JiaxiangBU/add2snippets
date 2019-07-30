@@ -8,7 +8,12 @@
 [![DOI](https://zenodo.org/badge/199655626.svg)](https://zenodo.org/badge/latestdoi/199655626)
 <!-- badges: end -->
 
-The goal of add2snippets is to help add useful R snippets.
+The goal of add2snippets is to help add useful R snippets and avoid
+wasting time on writing duplicated codes. There are similar packages
+like
+[Selected\_Code\_To\_Snippet](https://github.com/Timag/Selected_Code_To_Snippet).
+Further more information, see
+[notes](https://jiaxiangbu.github.io/learn_rstudioapi/analysis/rstudio-and-api-learning-notes.html#snippets).
 
 ## Installation
 

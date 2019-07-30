@@ -20,11 +20,11 @@ source("../imp_rmd/R/pull_and_push.R")
 # add zenodo citation -----------------------------------------------------
 
 library(devtools)
-use_r("add_uml")
+# use_r("add_uml")
 load_all()
 document()
 # load_all()
-install()
+devtools::install()
 
 # publish -----------------------------------------------------------------
 
