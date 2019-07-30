@@ -1,2 +1,5 @@
 ^add2snippets\.Rproj$
 ^\.Rproj\.user$
+^dev_history\.R$
+^README\.Rmd$
+^LICENSE\.md$

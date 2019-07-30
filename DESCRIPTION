@@ -1,5 +1,5 @@
 Package: add2snippets
-Title: What the Package Does (One Line, Title Case)
+Title: Saving and Sharing Snippets
 Version: 0.0.0.9000
 Authors@R:
     person(given = "Jiaxiang",
@@ -7,7 +7,11 @@ Authors@R:
            role = c("aut", "cre"),
            email = "alex.lijiaxiang@foxmail.com",
            comment = c(ORCID = "https://orcid.org/0000-0003-3196-6492"))
-Description: What the package does (one paragraph).
-License: What license it uses
+Description: Saving and Sharing Snippets.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 6.1.1
+Imports: 
+    magrittr
