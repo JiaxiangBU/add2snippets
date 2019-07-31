@@ -15,6 +15,9 @@ like
 Further more information, see
 [notes](https://jiaxiangbu.github.io/learn_rstudioapi/analysis/rstudio-and-api-learning-notes.html#snippets).
 
+For RStudio users, just hold <kbd>Shift</kbd> + <kbd>Tab</kbd> to type
+the snippets.
+
 ## Installation
 
 The development version from [GitHub](https://github.com/) with:

@@ -21,6 +21,8 @@ knitr::opts_chunk$set(
 The goal of add2snippets is to help add useful R snippets and avoid wasting time on writing duplicated codes. There are similar packages like [Selected_Code_To_Snippet](https://github.com/Timag/Selected_Code_To_Snippet). Further more information, see
 [notes](https://jiaxiangbu.github.io/learn_rstudioapi/analysis/rstudio-and-api-learning-notes.html#snippets).
 
+For RStudio users, just hold <kbd>Shift</kbd> + <kbd>Tab</kbd> to type the snippets.
+
 ## Installation
 
 The development version from [GitHub](https://github.com/) with:
