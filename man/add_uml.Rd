@@ -6,6 +6,9 @@
 \usage{
 add_uml(open.r.snippets = TRUE)
 }
+\arguments{
+\item{open.r.snippets}{Logical, by default \code{TRUE}}
+}
 \description{
 Paste the workflow figure built with the Unified Modeling Language
 }
