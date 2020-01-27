@@ -41,32 +41,32 @@ add_uml(open.r.snippets = FALSE)
 #> snippet push
 #>     nomnoml::nomnoml("
 #>     #stroke: #a86128
-#>     [<frame>目前点击相关的模型、规则安排|
-#>       [<abstract>模型v1.0||xxx]
-#>       [xxx的合作方名单] --> [模型v1.0]
+#>     [<frame>Current_CTR_Model|
+#>       [<abstract>Model_v1.0||xxx]
+#>       [Party_A] --> [Model_v1.0]
 #> 
-#>       [<abstract>模型v2.0||xxx模型]
-#>       [xxx的合作方名单] --> [模型v2.0]
+#>       [<abstract>Model_v2.0||xxxModel_]
+#>       [Party_A] --> [Model_v2.0]
 #> 
-#>       [<abstract>模型v3.0||user-based xxx]
-#>       [xxx的合作方名单] --> [模型v3.0]
+#>       [<abstract>Model_v3.0||user-based xxx]
+#>       [Party_A] --> [Model_v3.0]
 #> 
-#>       [<abstract>模型v3.1||item-based xxx]
-#>       [xxx的合作方名单] --> [模型v3.1]
+#>       [<abstract>Model_v3.1||item-based xxx]
+#>       [Party_A] --> [Model_v3.1]
 #> 
-#>       [<abstract>模型v3.2||@xxx 排序]
-#>       [xxx的合作方名单] --> [模型v3.2]
+#>       [<abstract>Model_v3.2||@xxx Rank]
+#>       [Party_A] --> [Model_v3.2]
 #> 
-#>       [<abstract>默认排序||@xxx]
-#>       [模型v1.0] --> [默认排序]
-#>       [模型v2.0] --> [默认排序]
-#>       [模型v3.0] --> [默认排序]
-#>       [模型v3.1] --> [默认排序]
-#>       [模型v3.2] --> [默认排序]
+#>       [<abstract>Default_Rank||@xxx]
+#>       [Model_v1.0] --> [Default_Rank]
+#>       [Model_v2.0] --> [Default_Rank]
+#>       [Model_v3.0] --> [Default_Rank]
+#>       [Model_v3.1] --> [Default_Rank]
+#>       [Model_v3.2] --> [Default_Rank]
 #> 
 #> 
-#>       [<abstract>去重逻辑||@xxx]
-#>       [默认排序] --> [去重逻辑]
+#>       [<abstract>Distinct_Logic||@xxx]
+#>       [Default_Rank] --> [Distinct_Logic]
 #>     ]
 #>     ")
 #> Paste the snippet in the document.We recommend you do it manually.
@@ -83,7 +83,8 @@ add_uml(open.r.snippets = FALSE)
 <h6 align="center">
 
 Please note that the `add2snippets` project is released with a
-[Contributor Code of Conduct](.github/CODE_OF_CONDUCT.md).<br>By
+[Contributor Code of
+Conduct](https://github.com/JiaxiangBU/add2snippets/blob/master/CODE_OF_CONDUCT.md).<br>By
 contributing to this project, you agree to abide by its terms.
 
 </h6>
@@ -96,6 +97,7 @@ contributing to this project, you agree to abide by its terms.
 
 <h6 align="center">
 
-MIT © [Jiaxiang Li](LICENSE.md)
+MIT © [Jiaxiang
+Li](https://github.com/JiaxiangBU/add2snippets/blob/master/LICENSE.md)
 
 </h6>
