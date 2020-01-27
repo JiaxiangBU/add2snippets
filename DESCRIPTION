@@ -1,5 +1,5 @@
 Package: add2snippets
-Title: Saving and Sharing Snippets
+Title: A Package to Save and Share Snippets
 Version: 0.1.0
 Authors@R:
     person(given = "Jiaxiang",
@@ -7,7 +7,7 @@ Authors@R:
            role = c("aut", "cre"),
            email = "alex.lijiaxiang@foxmail.com",
            comment = c(ORCID = "https://orcid.org/0000-0003-3196-6492"))
-Description: Saving and Sharing Snippets.
+Description: Provide functions to save and share snippets including unified modeling language.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
