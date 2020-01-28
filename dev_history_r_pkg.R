@@ -171,10 +171,13 @@ clipr::read_clip() %>%
 
 # update template ---------------------------------------------------------
 
+# update back
 library(fs)
 file_copy("dev_history_r_pkg.R", "../dev_history/refs/dev_history_r_pkg.R",
           overwrite = TRUE)
-# open it!
+# update now
+file_copy("../dev_history/refs/dev_history_r_pkg.R", "dev_history_r_pkg.R",
+          overwrite = TRUE)
 
 
 # push --------------------------------------------------------------------

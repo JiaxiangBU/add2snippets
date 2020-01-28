@@ -19,6 +19,6 @@ library(add2snippets)
 ```
 
 ```{r}
-add_uml(open.r.snippets = FALSE)
+add_uml(open.r.snippets = FALSE, is_paste = FALSE)
 ```
 

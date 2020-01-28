@@ -4,10 +4,12 @@
 \alias{add_uml}
 \title{Paste the workflow figure built with the Unified Modeling Language}
 \usage{
-add_uml(open.r.snippets = TRUE)
+add_uml(open.r.snippets = TRUE, is_paste = TRUE)
 }
 \arguments{
 \item{open.r.snippets}{Logical, by default \code{TRUE}}
+
+\item{is_paste}{Logical, by default \code{TRUE}}
 }
 \value{
 If \code{open.r.snippets = FALSE}, the result is the text including the UML text.
@@ -17,5 +19,5 @@ If \code{open.r.snippets = TRUE}, open the local R snippet file.
 Paste the workflow figure built with the Unified Modeling Language
 }
 \examples{
-add_uml(open.r.snippets = FALSE)
+add_uml(open.r.snippets = FALSE, is_paste = FALSE)
 }

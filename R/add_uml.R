@@ -4,12 +4,13 @@
 #' @importFrom clipr write_clip
 #' @import utils
 #' @param open.r.snippets Logical, by default \code{TRUE}
+#' @param is_paste Logical, by default \code{TRUE}
 #' @return If \code{open.r.snippets = FALSE}, the result is the text including the UML text.
 #' If \code{open.r.snippets = TRUE}, open the local R snippet file.
 #' @export
 #' @examples
-#' add_uml(open.r.snippets = FALSE)
-add_uml <- function(open.r.snippets = TRUE) {
+#' add_uml(open.r.snippets = FALSE, is_paste = FALSE)
+add_uml <- function(open.r.snippets = TRUE, is_paste = TRUE) {
   text <- glue::glue('
   snippet push
       nomnoml::nomnoml("
@@ -42,7 +43,9 @@ add_uml <- function(open.r.snippets = TRUE) {
         [Default_Rank] --> [Distinct_Logic]
       ]
       ")')
-  clipr::write_clip(text, allow_non_interactive = TRUE)
+  if(is_paste) {
+    clipr::write_clip(text, allow_non_interactive = TRUE)
+  }
   if(open.r.snippets) {
       utils::file.edit("~/.R/snippets/r.snippets")
   } else {
