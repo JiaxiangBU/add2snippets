@@ -17,3 +17,9 @@ Imports:
     clipr,
     glue,
     magrittr
+Suggests: 
+    spelling,
+    knitr,
+    rmarkdown
+Language: en-US
+VignetteBuilder: knitr

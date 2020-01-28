@@ -9,6 +9,13 @@ add_uml(open.r.snippets = TRUE)
 \arguments{
 \item{open.r.snippets}{Logical, by default \code{TRUE}}
 }
+\value{
+If \code{open.r.snippets = FALSE}, the result is the text including the UML text.
+If \code{open.r.snippets = TRUE}, open the local R snippet file.
+}
 \description{
 Paste the workflow figure built with the Unified Modeling Language
+}
+\examples{
+add_uml(open.r.snippets = FALSE)
 }

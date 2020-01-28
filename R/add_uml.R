@@ -4,7 +4,11 @@
 #' @importFrom clipr write_clip
 #' @import utils
 #' @param open.r.snippets Logical, by default \code{TRUE}
+#' @return If \code{open.r.snippets = FALSE}, the result is the text including the UML text.
+#' If \code{open.r.snippets = TRUE}, open the local R snippet file.
 #' @export
+#' @examples
+#' add_uml(open.r.snippets = FALSE)
 add_uml <- function(open.r.snippets = TRUE) {
   text <- glue::glue('
   snippet push
