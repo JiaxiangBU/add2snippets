@@ -12,6 +12,7 @@ library(magrittr)
 
 options(usethis.full_name = "Jiaxiang Li")
 use_mit_license()
+usethis::use_code_of_conduct()
 
 # rm -rf packrat
 
@@ -175,6 +176,18 @@ clipr::read_clip() %>%
 library(fs)
 file_copy("dev_history_r_pkg.R", "../dev_history/refs/dev_history_r_pkg.R",
           overwrite = TRUE)
+dev_history_repo <- git2r::repository("../dev_history")
+library(magrittr)
+dev_history_repo %>%
+    git2r::status()
+dev_history_repo %>%
+    git2r::add(path = ".")
+dev_history_repo %>%
+    git2r::commit(message = "Update back.")
+dev_history_repo %>%
+    git2r::push(name = 'origin', refspec = "refs/heads/master", cred = git2r::cred_token())
+
+
 # update now
 file_copy("../dev_history/refs/dev_history_r_pkg.R", "dev_history_r_pkg.R",
           overwrite = TRUE)
